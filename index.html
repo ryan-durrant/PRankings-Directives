@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html ng-app='prankings'>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="app/animate.css"
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="container">
+    </br>
+    </br>
+      <h2 class="center-align">Power Rankings</h2>
+      <h5 class="center-align">2015 Preseason power rankings</h5>
+      <img style="max-width: 400px;" src="logos/logos.gif">
+    </br>
+    </br>
+      <toggle-list scopedata="teams" scopestring="{{name}}" scopefunction="hey()" class="center-align"></toggle-list>
+
+    </div>
+    <script src="app/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/mainCtrl.js"></script>
+    <script src="directive/toggleDirective.js"></script>
+  </body>
+</html>
